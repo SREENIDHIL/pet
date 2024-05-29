@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Pet Boarding Registration Form</title>
+<link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+    <div id="formreg">
+        <form>
+            <h2>Veterinary Registration Form</h2>
+
+            <div class="input-group">
+                <label for="vet_name">Veterinarian's Name:</label>
+                <input type="text" id="vet_name" name="vet_name" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="vet_contact">Contact Information:</label>
+                <input type="text" id="vet_contact" name="vet_contact" rows="4" required></input>
+            </div>
+            
+            <div class="input-group">
+                <label for="pet_medications">Current Medications:</label>
+                <textarea id="pet_medications" name="pet_medications" rows="4"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="health_concerns">Health Concerns:</label>
+                <textarea id="health_concerns" name="health_concerns" rows="4"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="time">Prefferd time:</label>
+                <input type="time" name="preffered_time" id="preffered_time" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="date">Preffered Date:</label>
+                <input type="date" name="preffered_date" id="preferred_date" required>
+            </div>
+            
+            <a href="veternary.html"><input type="button" value="submit" id="val" onclick="alert('Form Submitted successfully')"></a>
+        </form>
+        <div id="errorMessages"></div>
+    </div>
+                   
+<script src="form.js"></script>
+</body>
+</html>
